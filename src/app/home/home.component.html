@@ -1,1 +1,16 @@
-<h2>Members:</h2>
+<div class="container">
+  <h2>Current Members:</h2>
+  <div class="members">
+    <div class="members__panel"*ngFor="let member of members | async" (click)="memberDetail(member)">
+      <div >
+        <h3>{{member.name}}</h3>
+        <p>{{member.age}}</p>
+        <div *ngIf="currentRoute === '/admin'">
+          <p>{{member.favorite}}</p>
+          <p>{{member.about}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,18 @@
-<p>
-  admin works!
-</p>
+<button type="button" (click)="newMember()">Add New Member</button>
+
+<div *ngIf="newMemberForm" class="newMember">
+
+  <label>Member Name:</label>
+  <input #name>
+  <label>Age:</label>
+  <input #age>
+  <label>Favorite Beer:</label>
+  <input #favorite>
+  <label>About:</label>
+  <input #about>
+
+
+  <button type="button" name="newMember" (click)="addMember(name.value, age.value, favorite.value, about.value)">Add!</button>
+</div>
+
+<app-home></app-home>
