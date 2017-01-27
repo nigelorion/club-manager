@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<div class="main">
+  <h1 class="main__title">{{title}}</h1>
+
+  <ul class="main__nav">
+    <li class="main__nav__tab" routerLink="">Home</li>
+    <li class="main__nav__tab" routerLink="about">About</li>
+    <li class="main__nav__tab" routerLink="admin">Admin Panel</li>
+  </ul>
+
+
+  <router-outlet></router-outlet>
+
+</div>

@@ -1,0 +1,20 @@
+{ "members": [{
+    "name": "Fred",
+    "age": "22",
+    "favorite": "Stout",
+    "about": "Quarter pipe layback 50-50 Mike York mini ramp boned out crooked grind heel flip. Full pipe berm feeble pogo fast plant full-cab death box",
+    "id": "1"
+    }, {
+    "name": "Nigel",
+    "age": "29",
+    "favorite": "Lager",
+    "about": "Rock and roll casper slide fast plant nose masonite baseplate.",
+    "id": "2"
+    }, {
+    "name": "Dude",
+    "age": "35",
+    "favorite": "IPA",
+    "about": "Full pipe berm feeble pogo fast plant full-cab death box",
+    "id": "3"
+  }]
+}
