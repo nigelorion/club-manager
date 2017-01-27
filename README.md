@@ -1,31 +1,47 @@
-# ClubManager
+# _Club Members_
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+#### _Week 4 Javascript Solo Project. Angular 2 with Firebase._
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### By _**Nigel Orion Burnett**_
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+_View all current members at the home page. If the user selects a specific member they will be taken to a details page generated for that member. A user admin panel allows for editing, adding, and removing members._
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Setup/Installation Requirements
 
-## Running unit tests
+* _Clone repository to the desired location on your local machine._
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* _You must create a Firebase Database!_
+* _npm install angularfire2 firebase --save_
+* _add "types": [ "firebase" ] to the tsconfig.json_
+* _Make a new project with firebase and select connect with web app._
+* _Create a file called api-keys.ts in the app directory_
+* _Paste the following (with your specifc firebase credentials)
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };_
 
-## Running end-to-end tests
+* _Open Terminal and navigate to the top level of the project folder_
+* _In terminal run 'npm install' to resolve all dependancies_
+* _run 'ng serve' to run on your local server!_
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
-## Deploying to GitHub Pages
+## Support and contact details
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+_nigelorion@gmail.com_
 
-## Further help
+## Technologies Used
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+_HTML, CSS, JavaScript, Sass, Gulp, Angular 2_
+
+### License
+
+*MIT*
+
+Copyright (c) 2016 **_Epicodus_**

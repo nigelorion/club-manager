@@ -10,9 +10,9 @@
     <div class="members__panel" *ngFor="let member of members | async | filterPipe:filter">
       <div (click)="memberDetail(member)">
         <h3>{{member.name}}</h3>
-        <p>{{member.age}}</p>
+        <p>Age: {{member.age}}</p>
         <div *ngIf="currentRoute === '/admin'">
-          <p>{{member.favorite}}</p>
+          <p>Favorite Beer: <b>{{member.favorite}}</b></p>
           <p>{{member.about}}</p>
         </div>
       </div>

@@ -18,7 +18,15 @@ export class FilterPipe implements PipeTransform {
       }
     }
     return output;
-  } else {
+  } else if (filter === "old"){
+
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].age >= 50) {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else {
 
   return input;
   }
