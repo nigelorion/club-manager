@@ -1,12 +1,28 @@
 .editMember {
+
   display: flex;
   flex-direction: column;
   color: rgb(122, 122, 122);
   & input {
     margin-bottom: 5%;
+    height: 30px;
+    width: 80%;
+    font-size: 1em;
   }
   & button {
     margin: 3%;
+    width: 30%;
+    height: 10%;
+    border: none;
+    background-color: rgba(213, 127, 135, 0.68);
+    color: white;
+    font-size: 0.9em;
+    transition: all 250ms;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.64);
+      color: rgb(106, 106, 106);
+      transform: scale(1.1);
+    }
   }
   &__form {
     display: flex;

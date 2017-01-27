@@ -1,5 +1,14 @@
 .container {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & select {
+    width: 100px;
+    height: 20px;
+    background-color: rgba(82, 170, 189, 0.51);
+  }
 }
 
 .members {
@@ -7,19 +16,22 @@
   flex-wrap: wrap;
   justify-content: center;
   &__panel {
-
     padding: 1%;
     margin: 2%;
     flex: 1;
+    flex-grow: 0;
     min-width: 250px;
-
-
     background-color: rgba(196, 233, 251, 0.54);
-    color: rgb(54, 69, 68);
+    color: rgba(61, 61, 61, 0.54);
     transition: all 200ms;
+    min-width: 300px;
     &:hover {
       background-color: rgba(190, 204, 188, 0.75);
       cursor: pointer;
+      color: white;
+    }
+    &__title {
+      font-size: 2em;
     }
   }
 }

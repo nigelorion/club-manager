@@ -1,15 +1,17 @@
 <div class="container">
   <h2>Current Members:</h2>
-  <h3>Filter By Age:</h3>
-  <select (change)="onChange($event.target.value)">
-    <option value="allMembers" selected="selected">All Members</option>
-    <option value="young">Youngsters</option>
-    <option value="old">Oldies</option>
-  </select>
+  <div *ngIf="currentRoute === '/'">
+    <h3>Filter By Age:</h3>
+    <select (change)="onChange($event.target.value)">
+      <option value="allMembers" selected="selected">All Members</option>
+      <option value="young">Youngsters</option>
+      <option value="old">Oldies</option>
+    </select>
+  </div>
   <div class="members">
     <div class="members__panel" *ngFor="let member of members | async | filterPipe:filter">
       <div (click)="memberDetail(member)">
-        <h3>{{member.name}}</h3>
+        <h3 class="members__panel__title">{{member.name}}</h3>
         <p>Age: {{member.age}}</p>
         <div *ngIf="currentRoute === '/admin'">
           <p>Favorite Beer: <b>{{member.favorite}}</b></p>

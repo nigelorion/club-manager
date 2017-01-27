@@ -1,31 +1,52 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif');
 
+* {
+margin: 0;
+padding: 0;
+}
+
 .main {
-  max-width: 1000px;
-  margin: 3% auto;
+  // max-width: 1000px;
+  margin: 0 auto;
   font-family: 'Droid Serif', serif;
+  background-image: url(./assets/images/background.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: rgb(78, 75, 75);
+  min-height: 1200px;
   &__title {
     // font-family: 'Permanent Marker', cursive;
-    font-size: 3em;
+    // font-size: 3em;
+    // margin: 0;
   }
   &__nav {
     background-color: rgba(203, 203, 203, 0.59);
     list-style: none;
-    margin:  5% 0;
-    height: 80px;
+    // margin:  5% 0;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
+
     font-size: 2em;
     &__tab {
-      padding: 1%;
+      padding: 2%;
       transition: all 250ms;
+      margin-left: 8%;
       &:hover {
-        background-color: rgba(102, 158, 163, 0.3);
-        color: rgb(117, 117, 117);
+        background-color: rgba(157, 224, 230, 0.3);
+        color: white;
         cursor: pointer;
       }
     }
   }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

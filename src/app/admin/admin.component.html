@@ -1,19 +1,22 @@
-<button type="button" (click)="newMember()">Add New Member</button>
+<div class="admin">
+
+  <button class="centerButton" type="button" (click)="newMember()">Add New Member</button>
 
 
-<div *ngIf="newMemberForm" class="newMember">
+  <div *ngIf="newMemberForm" class="newMember">
 
-  <label>Member Name:</label>
-  <input #name>
-  <label>Age:</label>
-  <input #age>
-  <label>Favorite Beer:</label>
-  <input #favorite>
-  <label>About:</label>
-  <input #about>
+    <label>Member Name:</label>
+    <input #name>
+    <label>Age:</label>
+    <input #age>
+    <label>Favorite Beer:</label>
+    <input #favorite>
+    <label>About:</label>
+    <input #about>
 
 
-  <button type="button" name="newMember" (click)="addMember(name.value, age.value, favorite.value, about.value)">Add!</button>
+    <button type="button" name="newMember" (click)="addMember(name.value, age.value, favorite.value, about.value)">Add!</button>
+  </div>
 </div>
 
 <app-home></app-home>

@@ -15,7 +15,6 @@ _View all current members at the home page. If the user selects a specific membe
 
 * _You must create a Firebase Database!_
 * _npm install angularfire2 firebase --save_
-* _add "types": [ "firebase" ] to the tsconfig.json_
 * _Make a new project with firebase and select connect with web app._
 * _Create a file called api-keys.ts in the app directory_
 * _Paste the following (with your specifc firebase credentials)
@@ -26,6 +25,8 @@ export var masterFirebaseConfig = {
     storageBucket: "xxxx.appspot.com",
     messagingSenderId: "xxxx"
   };_
+
+* _Upload the members.json file and set the rules true on your firebase project_
 
 * _Open Terminal and navigate to the top level of the project folder_
 * _In terminal run 'npm install' to resolve all dependancies_
