@@ -6,10 +6,22 @@ import { MemberService } from  './member.service';
   name: 'filterPipe',
   pure: false
 })
-export class FilterPipePipe implements PipeTransform {
+export class FilterPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
+  transform(input: Member[], filter){
+  var output: Member[] = [];
+  if (filter === "young"){
 
+    for (var i = 0; i < input.length; i++) {
+      if (input[i].age <= 20) {
+        output.push(input[i]);
+      }
+    }
+    return output;
+  } else {
+
+  return input;
   }
+}
 
 }

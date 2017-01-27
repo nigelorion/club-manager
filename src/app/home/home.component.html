@@ -1,15 +1,23 @@
 <div class="container">
   <h2>Current Members:</h2>
+  <h3>Filter By Age:</h3>
+  <select (change)="onChange($event.target.value)">
+    <option value="allMembers" selected="selected">All Members</option>
+    <option value="young">Youngsters</option>
+    <option value="old">Oldies</option>
+  </select>
   <div class="members">
-    <div class="members__panel"*ngFor="let member of members | async" (click)="memberDetail(member)">
-      <div >
+    <div class="members__panel" *ngFor="let member of members | async | filterPipe:filter">
+      <div (click)="memberDetail(member)">
         <h3>{{member.name}}</h3>
         <p>{{member.age}}</p>
         <div *ngIf="currentRoute === '/admin'">
           <p>{{member.favorite}}</p>
           <p>{{member.about}}</p>
         </div>
-
+      </div>
+      <div *ngIf="currentRoute === '/admin'">
+        <app-update-member [selectedMember]="member"></app-update-member>
       </div>
     </div>
   </div>

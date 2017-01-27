@@ -8,9 +8,10 @@ import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
-import { FilterPipePipe } from './filter-pipe.pipe';
+import { FilterPipe } from './filter-pipe.pipe';
 import {masterFirebaseConfig} from './api-keys'
 import {AngularFireModule} from 'angularfire2';
+import { UpdateMemberComponent } from './update-member/update-member.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     AdminComponent,
     HomeComponent,
     MemberDetailComponent,
-    FilterPipePipe
+    FilterPipe,
+    UpdateMemberComponent
   ],
   imports: [
     BrowserModule,

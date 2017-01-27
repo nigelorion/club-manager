@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
 
   currentRoute: string = this.router.url;
 
+  filter: string = "allMembers"
+
 
   constructor(private memberService: MemberService, private router: Router) { }
 
@@ -26,6 +28,10 @@ export class HomeComponent implements OnInit {
   memberDetail(clicked) {
     this.router.navigate(['members', clicked.$key]);
     console.log(clicked);
+  }
+
+  onChange(option) {
+    this.filter = option;
   }
 
 

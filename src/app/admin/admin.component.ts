@@ -28,7 +28,6 @@ export class AdminComponent implements OnInit {
   addMember(name: string, age: number, favorite: string, about: string) {
     this.newMemberForm = null;
     var newMember: Member = new Member(name, age, favorite, about);
-    console.log(newMember)
     this.memberService.sendMember(newMember);
   }
 

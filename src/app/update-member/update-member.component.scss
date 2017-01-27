@@ -1,0 +1,15 @@
+.editMember {
+  display: flex;
+  flex-direction: column;
+  color: rgb(122, 122, 122);
+  & input {
+    margin-bottom: 5%;
+  }
+  & button {
+    margin: 3%;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}

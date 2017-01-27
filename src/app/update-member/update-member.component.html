@@ -1,0 +1,21 @@
+<div class="editMember">
+
+  <p>Edit Member Details</p>
+
+  <div class="editMember__form" *ngIf="showEdit">
+    <label>Member Name:</label>
+    <input [(ngModel)]="selectedMember.name">
+    <label>Age:</label>
+    <input [(ngModel)]="selectedMember.age">
+    <label>Favorite Beer:</label>
+    <input [(ngModel)]="selectedMember.favorite">
+    <label>About:</label>
+    <input [(ngModel)]="selectedMember.about">
+    <button type="button" (click)="sendUpdate(selectedMember)">Update!</button>
+  </div>
+
+  <button type="button" (click)="startEdit()">Edit</button>
+
+  <button type="button" (click)="sendDelete(selectedMember)">Delete</button>
+
+</div>
